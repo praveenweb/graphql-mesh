@@ -32,7 +32,7 @@ sources:
         source: <path-to-open-api-schema.json>
 ```
 
-Download the Open API Spec for this example and replace the source path appropriately. This is a spec for API served at [https://api.exchangerate-api.com/v4](https://api.exchangerate-api.com/v4).
+Download the Open API Spec for this example and replace the source path appropriately. This is a spec for API served at `https://api.exchangerate-api.com/v4`.
 
 ## Run GraphQL Mesh
 
@@ -42,7 +42,7 @@ Run the GraphQL Mesh instance with the following command:
 yarn mesh serve
 ```
 
-This will run a GraphQL API at [http://localhost:4000](http://localhost:4000).
+This will run a GraphQL API at `http://localhost:4000`.
 
 To add this as a remote schema to the Hasura Cloud project, we will have to deploy this on a public endpoint. I'm going to make use of Codesandbox to try this out.
 
@@ -52,7 +52,7 @@ https://codesandbox.io/embed/stupefied-mclaren-00e5c?fontsize=14&hidenavigation=
 
 You can create a new Sandbox/fork the above with Node.js and put in the mesh config file over there.
 
-In your Hasura Cloud project, add the graphql endpoint from codesandbox. In the above example, it would be [https://00e5c.sse.codesandbox.io/graphql](https://00e5c.sse.codesandbox.io/graphql). Replace this if necessary with your own forked sandbox URL.
+In your Hasura Cloud project, add the graphql endpoint from codesandbox. In the above example, it would be `https://00e5c.sse.codesandbox.io/graphql`. Replace this if necessary with your own forked sandbox URL.
 
 Alright, now we have configured GraphQL Mesh to serve a GraphQL API over an existing OpenAPI spec.
 
